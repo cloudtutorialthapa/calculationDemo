@@ -52,7 +52,7 @@ const CalculationForm = ({ onSubmit }: Props) => {
         <table className="table text-center table-bordered w-auto">
           <thead>
             <tr>
-              <th className="text-center" colSpan="3">
+              <th className="text-center" colSpan={3}>
                 {name}
               </th>
             </tr>
@@ -170,7 +170,7 @@ const CalculationForm = ({ onSubmit }: Props) => {
             </tr>
             <tr>
               <td> Bonus</td>
-              <td colSpan="2">
+              <td colSpan={2}>
                 <input
                   {...register('dragBonus', { valueAsNumber: true })}
                   id="dragBonus"
@@ -182,7 +182,7 @@ const CalculationForm = ({ onSubmit }: Props) => {
             </tr>
             <tr>
               <td> Tips</td>
-              <td colSpan="2">
+              <td colSpan={2}>
                 <input
                   {...register('dragTips', { valueAsNumber: true })}
                   id="dragTips"
@@ -193,7 +193,7 @@ const CalculationForm = ({ onSubmit }: Props) => {
               </td>
             </tr>
             <tr>
-              <td colSpan="3">
+              <td colSpan={3}>
                 <div className="mb-3"></div>
               </td>
             </tr>
@@ -220,7 +220,7 @@ const CalculationForm = ({ onSubmit }: Props) => {
             </tr>
             <tr>
               <td>Cash Pay</td>
-              <td colSpan="2">
+              <td colSpan={2}>
                 <input
                   {...register('dragCPay', { valueAsNumber: true })}
                   id="dragCPay"
@@ -232,7 +232,7 @@ const CalculationForm = ({ onSubmit }: Props) => {
             </tr>
             <tr>
               <td>Cash Out</td>
-              <td colSpan="2">
+              <td colSpan={2}>
                 <input
                   {...register('dragCOut', { valueAsNumber: true })}
                   id="dragCOut"
@@ -244,7 +244,7 @@ const CalculationForm = ({ onSubmit }: Props) => {
             </tr>
             <tr>
               <td>Cash IN</td>
-              <td colSpan="2">
+              <td colSpan={2}>
                 <input
                   {...register('dragCIN', { valueAsNumber: true })}
                   id="dragCIN"
@@ -260,7 +260,7 @@ const CalculationForm = ({ onSubmit }: Props) => {
         <table className="table table-bordered w-auto">
           <thead>
             <tr>
-              <th className="text-center" colSpan="3">
+              <th className="text-center" colSpan={3}>
                 {name2}
               </th>
             </tr>
@@ -378,7 +378,7 @@ const CalculationForm = ({ onSubmit }: Props) => {
             </tr>
             <tr>
               <td> Bonus</td>
-              <td colSpan="2">
+              <td colSpan={2}>
                 <input
                   {...register('jessicaBonus', { valueAsNumber: true })}
                   id="jessicaBonus"
@@ -390,7 +390,7 @@ const CalculationForm = ({ onSubmit }: Props) => {
             </tr>
             <tr>
               <td> Tips</td>
-              <td colSpan="2">
+              <td colSpan={2}>
                 <input
                   {...register('jessicaTips', { valueAsNumber: true })}
                   id="jessicaTips"
@@ -401,7 +401,7 @@ const CalculationForm = ({ onSubmit }: Props) => {
               </td>
             </tr>
             <tr>
-              <td colSpan="3">
+              <td colSpan={3}>
                 <div className="mb-3"></div>
               </td>
             </tr>
@@ -428,7 +428,7 @@ const CalculationForm = ({ onSubmit }: Props) => {
             </tr>
             <tr>
               <td>Cash Pay</td>
-              <td colSpan="2">
+              <td colSpan={2}>
                 <input
                   {...register('jessicaCPay', { valueAsNumber: true })}
                   id="jessicaCPay"
@@ -440,7 +440,7 @@ const CalculationForm = ({ onSubmit }: Props) => {
             </tr>
             <tr>
               <td>Cash Out</td>
-              <td colSpan="2">
+              <td colSpan={2}>
                 <input
                   {...register('jessicaCOut', { valueAsNumber: true })}
                   id="jessicaCOut"
@@ -452,7 +452,7 @@ const CalculationForm = ({ onSubmit }: Props) => {
             </tr>
             <tr>
               <td>Cash IN</td>
-              <td colSpan="2">
+              <td colSpan={2}>
                 <input
                   {...register('jessicaCIN', { valueAsNumber: true })}
                   id="jessicaCIN"
