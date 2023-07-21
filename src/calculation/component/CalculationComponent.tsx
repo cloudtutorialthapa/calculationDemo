@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import CalculationResult from './CalculationResult';
 import CalculationForm from './CalculationForm';
 type formValues = {
@@ -167,7 +167,7 @@ function CalculationComponent() {
 
   const onSubmit = (data: formValues) => {
     calculate(data);
-    setDataDetails((dataDetails) => ({
+    setDataDetails(() => ({
       dragFKS: data.dragFKS,
       dragFKE: data.dragFKE,
       dragGVS: data.dragGVS,
