@@ -66,7 +66,7 @@ const CalculationResult = ({ dataDetails, difference }: Props) => {
       <table className="table text-center table-bordered w-auto">
         <thead>
           <tr>
-            <th className="text-center" colSpan="4">
+            <th className="text-center" colSpan={4}>
               {name}
             </th>
           </tr>
@@ -110,14 +110,14 @@ const CalculationResult = ({ dataDetails, difference }: Props) => {
           </tr>
           <tr>
             <td> Bonus</td>
-            <td colSpan="3">{dataDetails.dragBonus}</td>
+            <td colSpan={3}>{dataDetails.dragBonus}</td>
           </tr>
           <tr>
             <td> Tips</td>
-            <td colSpan="3">{dataDetails.dragTips}</td>
+            <td colSpan={3}>{dataDetails.dragTips}</td>
           </tr>
           <tr>
-            <td colSpan="4">
+            <td colSpan={4}>
               <div className="mb-3"></div>
             </td>
           </tr>
@@ -128,19 +128,19 @@ const CalculationResult = ({ dataDetails, difference }: Props) => {
             <td>{difference.dragCAD}</td>
           </tr>
           <tr>
-            <td colSpan="3">Cash Pay</td>
+            <td colSpan={3}>Cash Pay</td>
             <td>{dataDetails.dragCPay}</td>
           </tr>
           <tr>
-            <td colSpan="3">Cash Out</td>
+            <td colSpan={3}>Cash Out</td>
             <td>{dataDetails.dragCOut}</td>
           </tr>
           <tr>
-            <td colSpan="3">Cash IN</td>
+            <td colSpan={3}>Cash IN</td>
             <td>{dataDetails.dragCIN}</td>
           </tr>
           <tr>
-            <td colSpan="3">Calculation</td>
+            <td colSpan={3}>Calculation</td>
             <td>{difference.dragBalance}</td>
           </tr>
         </tbody>
@@ -148,7 +148,7 @@ const CalculationResult = ({ dataDetails, difference }: Props) => {
       <table className="table text-center table-bordered w-auto">
         <thead>
           <tr>
-            <th className="text-center" colSpan="4">
+            <th className="text-center" colSpan={4}>
               {name2}
             </th>
           </tr>
@@ -192,14 +192,14 @@ const CalculationResult = ({ dataDetails, difference }: Props) => {
           </tr>
           <tr>
             <td> Bonus</td>
-            <td colSpan="3">{dataDetails.jessicaBonus}</td>
+            <td colSpan={3}>{dataDetails.jessicaBonus}</td>
           </tr>
           <tr>
             <td> Tips</td>
-            <td colSpan="3">{dataDetails.jessicaTips}</td>
+            <td colSpan={3}>{dataDetails.jessicaTips}</td>
           </tr>
           <tr>
-            <td colSpan="4">
+            <td colSpan={4}>
               <div className="mb-3"></div>
             </td>
           </tr>
@@ -210,19 +210,19 @@ const CalculationResult = ({ dataDetails, difference }: Props) => {
             <td>{difference.jessicaCAD}</td>
           </tr>
           <tr>
-            <td colSpan="3">Cash Pay</td>
+            <td colSpan={3}>Cash Pay</td>
             <td>{dataDetails.jessicaCPay}</td>
           </tr>
           <tr>
-            <td colSpan="3">Cash Out</td>
+            <td colSpan={3}>Cash Out</td>
             <td>{dataDetails.jessicaCOut}</td>
           </tr>
           <tr>
-            <td colSpan="3">Cash IN</td>
+            <td colSpan={3}>Cash IN</td>
             <td>{dataDetails.jessicaCIN}</td>
           </tr>
           <tr>
-            <td colSpan="3">Calculation</td>
+            <td colSpan={3}>Calculation</td>
             <td>{difference.jessicaBalance}</td>
           </tr>
         </tbody>
