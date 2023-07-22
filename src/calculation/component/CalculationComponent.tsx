@@ -231,6 +231,14 @@ function CalculationComponent() {
     console.log(difference);
   };
 
+  const onFinalSubmit = () => {
+    console.log('FInaaly submitted to DB');
+  };
+
+  const onEdit = () => {
+    setCalcSwitch('form');
+  };
+
   return (
     <div>
       <div className="mb-3 text-center">
@@ -247,6 +255,8 @@ function CalculationComponent() {
           <CalculationResult
             dataDetails={dataDetails}
             difference={difference}
+            onEdit={onEdit}
+            onSubmit={onFinalSubmit}
           />
         </div>
       ) : null}

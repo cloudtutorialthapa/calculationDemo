@@ -56,8 +56,15 @@ interface Props {
     jessicaBalance: number;
     overall: number;
   };
+  onSubmit: () => void;
+  onEdit: () => void;
 }
-const CalculationResult = ({ dataDetails, difference }: Props) => {
+const CalculationResult = ({
+  dataDetails,
+  difference,
+  onSubmit,
+  onEdit,
+}: Props) => {
   const name = 'Drag';
   const name2 = 'Jessica';
 
@@ -227,6 +234,14 @@ const CalculationResult = ({ dataDetails, difference }: Props) => {
           </tr>
         </tbody>
       </table>
+      <div className="mb-3">
+        <button className="btn btn-primary text-center mr-4" onClick={onSubmit}>
+          Submit
+        </button>
+      </div>
+      <button className="btn btn-primary text-center mr-1" onClick={onEdit}>
+        Edit
+      </button>
     </div>
   );
 };
