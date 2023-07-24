@@ -238,10 +238,11 @@ const CalculationResult = ({
         <button className="btn btn-primary text-center mr-4" onClick={onSubmit}>
           Submit
         </button>
+        {'       '}
+        <button className="btn btn-primary text-center mr-1" onClick={onEdit}>
+          Edit
+        </button>
       </div>
-      <button className="btn btn-primary text-center mr-1" onClick={onEdit}>
-        Edit
-      </button>
     </div>
   );
 };
